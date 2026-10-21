@@ -1,0 +1,83 @@
+@media (max-width: 1050px) {
+  .container { width: min(100% - 40px, var(--container)); }
+  .navbar { gap: 16px; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 11px; }
+  .intro-grid { grid-template-columns: .45fr 1.2fr 1fr; gap: 25px; }
+  .experience-grid, .faq-grid, .contact-grid { gap: 48px; }
+  .wildlife-card { height: 390px; }
+  .wildlife-card-large { height: 450px; }
+}
+@media (max-width: 820px) {
+  .section-pad { padding: 78px 0; }
+  .site-header { background: rgba(27,39,28,.32); }
+  .navbar { height: 76px; }
+  .menu-toggle { display: flex; width: 38px; height: 38px; border: 1px solid rgba(255,255,255,.4); background: transparent; flex-direction: column; align-items: center; justify-content: center; gap: 5px; margin-left: auto; cursor: pointer; }
+  .menu-toggle span { display: block; width: 17px; height: 1px; background: white; }
+  .lang-toggle { order: 3; }
+  .nav-links { display: none; position: absolute; top: 76px; left: 0; right: 0; height: calc(100svh - 76px); overflow-y: auto; background: var(--forest); padding: 28px 28px 50px; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; }
+  .nav-links.is-open { display: flex; }
+  .nav-links a { display: block; padding: 17px 0; border-bottom: 1px solid rgba(255,255,255,.13); font-size: 15px; }
+  .nav-links .nav-cta { border: 0; padding: 17px 0; }
+  .intro-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .section-kicker { grid-column: 1 / -1; padding: 0; }
+  .intro-photo { height: 440px; }
+  .section-heading { align-items: start; flex-direction: column; gap: 20px; }
+  .heading-aside { max-width: 560px; }
+  .wildlife-grid { grid-template-columns: 1fr 1fr; }
+  .wildlife-card-large { grid-row: span 2; height: 610px; }
+  .wildlife-card { height: 297px; }
+  .tour-grid { grid-template-columns: 1fr 1fr; }
+  .tour-card:last-child { grid-column: 1 / -1; display: grid; grid-template-columns: .8fr 1fr; }
+  .tour-card:last-child .tour-image { height: 100%; min-height: 260px; }
+  .experience-grid { gap: 35px; }
+  .experience-image { height: 520px; }
+  .guide-grid { grid-template-columns: 1fr; }
+  .guide-grid article { min-height: 0; }
+  .faq-grid, .contact-grid { grid-template-columns: 1fr; }
+  .faq-grid { gap: 25px; }
+  .contact-grid { gap: 35px; }
+}
+@media (max-width: 560px) {
+  .container { width: calc(100% - 36px); }
+  .section-pad { padding: 64px 0; }
+  .brand-mark { width: 34px; height: 34px; font-size: 21px; }
+  .brand-copy strong { font-size: 17px; }
+  .brand-copy small { font-size: 7px; }
+  .navbar { gap: 10px; }
+  .lang-toggle { padding: 8px 10px; font-size: 12px; }
+  .hero { min-height: 710px; height: 94svh; background-position: 57% center; }
+  .hero-shade { background: linear-gradient(90deg, rgba(14,22,15,.78), rgba(18,27,17,.27)), linear-gradient(0deg, rgba(13,20,13,.55), transparent 55%); }
+  .hero-inner { padding-top: 60px; }
+  .hero h1 { font-size: clamp(58px, 17vw, 82px); }
+  .hero-text { max-width: 360px; font-size: 16px; line-height: 1.7; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .hero-note { margin-top: 48px; }
+  .hero-index { display: none; }
+  .scroll-cue { left: 18px; transform: none; }
+  h2 { font-size: clamp(42px, 13vw, 57px); }
+  .intro-grid { grid-template-columns: 1fr; }
+  .intro-photo { height: 330px; margin-top: 10px; }
+  .wildlife-grid { grid-template-columns: 1fr; }
+  .wildlife-card, .wildlife-card-large { height: 380px; grid-row: auto; }
+  .migration { min-height: 620px; }
+  .migration-bg { background-position: 58% center; }
+  .migration-content { padding-block: 70px; }
+  .migration h2 { font-size: 59px; }
+  .migration-stamp { right: 20px; bottom: 26px; }
+  .migration-stamp strong { font-size: 46px; }
+  .tour-grid { grid-template-columns: 1fr; }
+  .tour-card:last-child { grid-column: auto; display: block; }
+  .tour-card:last-child .tour-image { height: 230px; }
+  .tour-image { height: 230px; }
+  .tour-info > p:not(.tour-meta) { min-height: 0; }
+  .experience-grid { grid-template-columns: 1fr; }
+  .experience-image { height: 360px; }
+  .experience-copy { padding-top: 6px; }
+  .official-link { align-items: flex-start; flex-direction: column; }
+  .contact-form { grid-template-columns: 1fr; }
+  .form-row, .form-row:nth-child(3), .form-row:nth-child(4), .form-row:nth-child(5), .form-submit, .form-hint, .form-status { grid-column: 1; }
+  .footer-main { padding: 25px 0; align-items: flex-start; flex-wrap: wrap; }
+  .footer-main > p { width: 100%; order: 3; margin: 0; }
+  .footer-bottom { flex-direction: column; gap: 8px; }
+}
