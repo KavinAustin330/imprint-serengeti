@@ -205,3 +205,31 @@ body, p, a, button, input, select, textarea, summary, label, small, span{font-si
 .flagship{background:#f9f7f4}.flagship-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.flagship-flow{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}.flagship-flow span{border:1px solid #c29b6c;padding:10px 13px;font-weight:700}.day-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:32px}.day-card{background:white;border-top:4px solid #c29b6c;padding:20px 16px;min-height:205px}.day-card strong{display:block;font-size:14pt;color:#7a818f}.day-card h3{font-size:22px;margin:10px 0}.day-card p{font-size:14pt;margin:0;color:#666}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.feature-grid article{background:#eee8df;padding:24px}.feature-grid h3{font-size:22px;margin:8px 0}.feature-grid p{font-size:14pt;margin:0}.promise{margin-top:34px;padding:28px;border-left:5px solid #c29b6c;background:#1d1d1d;color:white}.promise p{font-size:26px;margin:0;font-weight:600}.practical-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.practical-grid article{padding:25px;background:#fff}.practical-grid h3{font-size:22px}.practical-grid p{font-size:14pt;color:#666}.client-note{font-size:14pt;color:#777;margin-top:18px}
 @media(max-width:820px){.campaign-strip .container,.flagship-grid{display:block}.campaign-strip strong{display:block;margin-bottom:12px}.day-grid{grid-template-columns:1fr 1fr}.feature-grid,.practical-grid{grid-template-columns:1fr 1fr}.nav-links a{font-size:14pt}}
 @media(max-width:560px){body{font-size:18.667px}.hero-text{font-size:18.667px}.day-grid,.feature-grid,.practical-grid{grid-template-columns:1fr}.brand-copy small,.lang-toggle{font-size:14pt}.photo-label{font-size:14pt}.hero h1{font-size:clamp(54px,15vw,76px)}}
+
+
+/* Gallery — verified documentary/travel photography */
+.gallery { background: #1d1d1d; color: var(--white); }
+.gallery .section-heading h2 { color: var(--white); }
+.gallery .overline { color: var(--gold-light); }
+.gallery .heading-aside { color: rgba(255,255,255,.78); }
+.gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); grid-auto-rows:300px; gap:16px; }
+.gallery-item { position:relative; overflow:hidden; border:0; padding:0; margin:0; background:#2b2b2b; cursor:zoom-in; text-align:left; color:white; }
+.gallery-item.gallery-wide { grid-column:span 2; }
+.gallery-item.gallery-tall { grid-row:span 2; }
+.gallery-item img { transition:transform .65s cubic-bezier(.2,.7,.2,1), filter .3s; }
+.gallery-item:hover img { transform:scale(1.045); filter:brightness(.86); }
+.gallery-overlay { position:absolute; inset:auto 0 0; display:flex; flex-direction:column; gap:5px; padding:25px; background:linear-gradient(0deg,rgba(12,16,12,.9),transparent); }
+.gallery-overlay strong { font:500 28px/1.1 var(--heading); }
+.gallery-overlay small { font-size:19px; letter-spacing:.08em; color:var(--gold-light); }
+.gallery-credit { display:flex; justify-content:space-between; align-items:flex-start; gap:30px; border-top:1px solid rgba(255,255,255,.18); margin-top:25px; padding-top:20px; }
+.gallery-credit p { max-width:760px; margin:0; color:rgba(255,255,255,.72); font-size:19px; line-height:1.7; }
+.gallery-credit a { flex-shrink:0; color:var(--gold-light); font-size:19px; font-weight:700; letter-spacing:.05em; }
+.lightbox { position:fixed; inset:0; z-index:1000; display:none; place-items:center; padding:5vw; background:rgba(10,12,10,.94); }
+.lightbox.is-open { display:grid; }
+.lightbox img { width:auto; height:auto; max-width:92vw; max-height:86vh; object-fit:contain; }
+.lightbox-close { position:absolute; top:24px; right:30px; border:0; background:transparent; color:white; font-size:42px; line-height:1; cursor:pointer; }
+
+/* Accessibility/readability floor requested for the prototype: 14pt ≈ 18.67px */
+body { font-size:19px; }
+.nav-links a, .lang-toggle, .eyebrow, .overline, .section-kicker, .hero-note, .scroll-cue, .photo-label, .wildlife-caption > span, .tour-meta, .tour-badge, .guide-label, .contact-form label, .contact-note, .button, .arrow-link, .image-note, .fine-print, .form-hint, .form-status, .footer-main > p, .back-top, .footer-bottom, .brand-copy small { font-size:19px; }
+.hero-text, .body-copy, .heading-aside, .wildlife-caption p, .migration-content > p:not(.overline), .tour-info > p:not(.tour-meta), .experience-list p, .guide-grid article > p:last-child, .official-link p, .faq-list summary, .faq-list details p, .contact-copy > p:not(.overline), .contact-form input, .contact-form select, .contact-form textarea { font-size:19px; }
